@@ -1,0 +1,106 @@
+body {
+    background: #070707;
+    -webkit-tap-highlight-color: transparent;
+}
+  
+  #join-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    border: 2px solid rgb(3, 242, 242);
+    border-radius: 2rem;
+    box-shadow: 0 0 10px cyan;
+  }
+  #video-streams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: 80vh;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .video-container {
+    max-height: 100%;
+    border: 2px solid black;
+    border-radius: 2rem;
+  }
+  
+  .video-player {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .video-player video{
+    border-radius: 2rem;
+  }
+  
+  button {
+    border: none;
+    background-color:transparent;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  #stream-controls {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #mic-btn, #camera-btn, #leave-btn {
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    border-radius: 20%;
+    border: 2px solid rgb(124, 126, 126);
+    background-color: transparent;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #video-container{
+    border: 2px solid red;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #video-streams {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      height: 80vh;
+      width: 95%;
+      /* border: 2px solid red; */
+      margin: 0 auto;
+    }
+    #stream-controls {
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+    #stream-controls {
+
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.2rem;
+      /* padding: 10px; */
+      background-color: black;
+    }
+    #mic-btn, #camera-btn, #leave-btn {
+      font-size: 0.8rem;
+      border-radius: 2rem;
+    }
+  }
+  
